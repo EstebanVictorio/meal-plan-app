@@ -1,12 +1,10 @@
-const path = require('path')
+const path = require("path")
 
-const root = path.resolve('./')
-
+const root = path.resolve("./")
 
 const alias = {
     component: `${root}/component`,
-    page: `${root}/pages`,
+    page: `${root}/pages`
 }
-
 
 module.exports = alias

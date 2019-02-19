@@ -1,7 +1,5 @@
-import { withMainLayout } from 'component/hoc/with-layout'
+import { withMainLayout } from "component/hoc/with-layout"
 
-const Home = () => <div>
-    Hello World!!!
-</div>
+export const Home = () => <div>Hello World!!!</div>
 
 export default withMainLayout(Home)
