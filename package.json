@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "babel-plugin-module-resolver": "^3.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.14.1",
+    "eslint-config-recommended": "^4.0.0",
+    "jest": "^24.1.0",
+    "next": "^8.0.1",
+    "prettier": "^1.16.4",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "dev": "eslint ./ && prettier --write \"**/.+(js)\" && next",
+    "build": "next build",
+    "start": "next start",
+    "alpha-test-suite": "jest ./test/suite/alpha",
+    "beta-test-suite": "jest ./test/suite/beta",
+    "gold-test-suite": "jest ./test/suite/gold",
+    "prod-test-suite": "jest ./test/suite/prod"
+  }
+}
