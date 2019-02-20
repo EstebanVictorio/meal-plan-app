@@ -11,6 +11,7 @@
         "lint": "eslint ./",
         "dev": "eslint ./ && yarn prettier --write && yarn flow && jest ./test/suite/alpha && next",
         "dev-precommit": "eslint ./ && yarn prettier --list-different && yarn flow && jest ./test/suite/alpha",
+        "dev-precommit-adv": "lint-staged && yarn flow && jest ./test/suite/alpha",
         "build": "next build",
         "start": "next start",
         "flow": "flow",
@@ -21,7 +22,7 @@
         "beta-test-suite": "jest ./test/suite/beta",
         "gold-test-suite": "jest ./test/suite/gold",
         "prod-test-suite": "jest ./test/suite/prod",
-        "precommit": "yarn dev-precommit"
+        "precommit": "yarn dev-precommit-adv"
     },
     "devDependencies": {
         "babel-eslint": "^10.0.1",
@@ -38,6 +39,7 @@
         "flow-bin": "^0.93.0",
         "husky": "^1.3.1",
         "jest": "^24.1.0",
+        "lint-staged": "^8.1.4",
         "prettier": "^1.16.4"
     }
 }
