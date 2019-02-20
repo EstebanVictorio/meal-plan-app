@@ -10,6 +10,10 @@ const SidebarContainer = () => {
             collapse={collapse}
             setCollapse={setCollapse}
             animations={{ expandAnim, collapseAnim }}
+
+
+
+            
         />
     )
 }
