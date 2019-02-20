@@ -10,7 +10,7 @@
     "scripts": {
         "lint": "eslint ./",
         "dev": "eslint ./ && yarn prettier --write && yarn flow && jest ./test/suite/alpha && next",
-        "dev-precommit": "eslint ./ && yarn prettier --write && yarn flow && jest ./test/suite/alpha",
+        "dev-precommit": "eslint ./ && yarn prettier --list-different && yarn flow && jest ./test/suite/alpha",
         "build": "next build",
         "start": "next start",
         "flow": "flow",
