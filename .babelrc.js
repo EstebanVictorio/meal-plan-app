@@ -8,7 +8,16 @@ const plugins = [
             root: [path.resolve("./component"), path.resolve("./theme")],
             alias
         }
-    ]
+    ],
+    [
+        require.resolve("babel-plugin-styled-components"),
+        {
+            ssr: true,
+            displayName: true,
+            preprocess: false
+        }
+    ],
+    [require.resolve("babel-plugin-transform-flow-strip-types")]
 ]
 
 const presets = ["next/babel"]
