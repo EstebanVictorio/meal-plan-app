@@ -9,7 +9,6 @@ const adapter = new Adapter()
 configure({ adapter })
 
 const wrapper = shallow(<Home />)
-console.log(wrapper.debug())
 
 export const homeRender = () => {
     it("Home Render", () => {
