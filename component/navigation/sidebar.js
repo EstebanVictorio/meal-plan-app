@@ -12,7 +12,7 @@ type Props = {
 const choseAnimation = (isCollapsed: boolean, animations: Object) =>
     isCollapsed ? animations.collapseAnim : animations.expandAnim
 
-const choseWidth = isCollapsed => (isCollapsed ? 60 : 200)
+const choseWidth = isCollapsed => (isCollapsed ? 60 : 150)
 
 export const Sidebar = ({ className, collapse, setCollapse }: Props) => {
     return (
@@ -25,8 +25,6 @@ export const Sidebar = ({ className, collapse, setCollapse }: Props) => {
         </div>
     )
 }
-
-Sidebar.propTypes = {}
 
 const StyledSidebar = styled(Sidebar)`
     width: ${({ collapse }) => choseWidth(collapse)}px;

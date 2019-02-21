@@ -10,11 +10,6 @@ const SidebarContainer = () => {
             collapse={collapse}
             setCollapse={setCollapse}
             animations={{ expandAnim, collapseAnim }}
-
-
-
-
-            
         />
     )
 }
@@ -25,13 +20,13 @@ const expandAnim = keyframes`
     }
 
     to{
-        width: 200px;
+        width: 150px;
     }
 `
 
 const collapseAnim = keyframes`
     from{
-        width: 200px;
+        width: 150px;
     }
 
     to{

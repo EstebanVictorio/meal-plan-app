@@ -1,11 +1,11 @@
 {
     "linters":{
-        "*.js": [
+        "*.js":[
             "eslint"
+        ],
+        "**/*.+(js)":[
+            "prettier --write",
+            "git add ."
         ]
-    },
-    "**/*.+(js)": [
-        "prettier --write",
-        "git add ."
-    ]
+    }
 }
